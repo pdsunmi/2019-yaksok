@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart='true'
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_close"
+            tools:ignore="RtlCompat" />
+
+        <ImageButton
+            android:id="@+id/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd='true'
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_check" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/zigle_bold"
+        android:gravity="center"
+        android:text="날짜 선택"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_selectionColor="#808080"
+        app:mcv_showOtherDates="defaults" />
+
+    <ListView
+        android:id="@+id/list_promise"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_dateConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd='true'
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonbackgroundsky"
+            android:fontFamily="@font/zigle"
+            android:text="날짜 확정"
+            android:textColor="@color/colorGray"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

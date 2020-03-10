@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YaksokActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        app:rippleColor="#FFFFFF">
+
+        <TextView
+            android:id="@+id/ysname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zigle_bold"
+            android:text="약속이름"
+            android:textColor="#000000"
+            android:textSize="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.07" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:backgroundTint="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.87"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05"
+            app:srcCompat="@drawable/ic_delete" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ysname"
+            app:layout_constraintVertical_bias="0.5">
+
+            <ScrollView
+                android:layout_width="300dp"
+                android:layout_height="230dp"
+                android:background="#226BCAFD"
+                android:scrollbarSize="10dp"
+                android:scrollbarStyle="outsideInset"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/board"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/zigle"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp">
+
+                <TableRow
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/btn_ysDate"
+                        android:layout_width="132.5dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/buttonbackgroundgray"
+                        android:fontFamily="@font/zigle"
+                        android:foreground="@drawable/buttondate2"
+                        android:stateListAnimator="@null"
+                        android:text="   날짜"
+                        android:textColor="@color/colorGray"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btn_ysStatus"
+                        android:layout_width="132.5dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/buttonbackgroundgray"
+                        android:fontFamily="@font/zigle"
+                        android:foreground="@drawable/buttonring2"
+                        android:stateListAnimator="@null"
+                        android:text="       내 상태 알리기"
+                        android:textColor="@color/colorGray"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/btn_ysMember"
+                        android:layout_width="110dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/buttonbackgroundgray"
+                        android:fontFamily="@font/zigle"
+                        android:foreground="@drawable/buttonmember2"
+                        android:stateListAnimator="@null"
+                        android:text="   멤버"
+                        android:textColor="@color/colorGray"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btn_ysMemo"
+                        android:layout_width="110dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/buttonbackgroundgray"
+                        android:fontFamily="@font/zigle"
+                        android:foreground="@drawable/buttonmemo2"
+                        android:stateListAnimator="@null"
+                        android:text="   메모"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/btn_ysPlace"
+                        android:layout_width="110dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/buttonbackgroundgray"
+                        android:fontFamily="@font/zigle"
+                        android:foreground="@drawable/buttonlocation2"
+                        android:stateListAnimator="@null"
+                        android:text="   장소"
+                        android:textColor="@color/colorGray"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btn_ysPay"
+                        android:layout_width="110dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/buttonbackgroundgray"
+                        android:fontFamily="@font/zigle"
+                        android:foreground="@drawable/buttonpay2"
+                        android:stateListAnimator="@null"
+                        android:text="     더치페이"
+                        android:textColor="@color/colorGray"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/btn_ysPenalty"
+                        android:layout_width="110dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/buttonbackgroundgray"
+                        android:fontFamily="@font/zigle"
+                        android:foreground="@drawable/buttonpenalty2"
+                        android:stateListAnimator="@null"
+                        android:text="  벌금"
+                        android:textColor="@color/colorGray"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btn_ysAlarm"
+                        android:layout_width="110dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/buttonbackgroundgray"
+                        android:fontFamily="@font/zigle"
+                        android:foreground="@drawable/buttonalarm2"
+                        android:stateListAnimator="@null"
+                        android:text="    알람"
+                        android:textColor="@color/colorGray"
+                        android:textSize="18sp" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

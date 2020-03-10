@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="320dp"
+    android:layout_gravity="center"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/zigle_bold"
+            android:text="알람"
+            android:textAlignment="center"
+            android:textColor="@color/colorGray"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btnNone"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttonbackgroundsky"
+            android:fontFamily="@font/zigle"
+            android:text="없음"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn5Min"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttonbackgroundsky"
+            android:fontFamily="@font/zigle"
+            android:text="5분전"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn15Min"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttonbackgroundsky"
+            android:fontFamily="@font/zigle"
+            android:text="15분전"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn30Min"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttonbackgroundsky"
+            android:fontFamily="@font/zigle"
+            android:text="30분전"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn1Hour"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonbackgroundsky"
+            android:fontFamily="@font/zigle"
+            android:text="1시간전"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

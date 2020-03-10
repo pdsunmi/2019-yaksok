@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zigle_bold"
+            android:gravity="center"
+            android:text="시작 시간"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TimePicker
+            android:id="@+id/timePicker_start"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:timePickerMode="spinner" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zigle_bold"
+            android:gravity="center"
+            android:text="종료 시간"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TimePicker
+            android:id="@+id/timePicker_end"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:timePickerMode="spinner" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_select_time"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonbackgroundsky"
+        android:fontFamily="@font/zigle"
+        android:text="선택하기"
+        android:textColor="@color/colorGray"
+        android:textSize="18sp" />
+</LinearLayout>

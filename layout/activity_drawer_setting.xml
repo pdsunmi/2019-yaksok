@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout6"
+    android:layout_width="250dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:background="@color/colorWhite"
+    android:excludeFromRecents="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/zigle_bold"
+        android:text="개인"
+        android:textAlignment="center"
+        android:textColor="@color/colorGray"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="false"
+        android:duplicateParentState="false"
+        android:isScrollContainer="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.13"
+        tools:layout_conversion_absoluteHeight="50dp"
+        tools:layout_conversion_absoluteWidth="50dp" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        android:cursorVisible="false"
+        android:fontFamily="@font/zigle"
+        android:gravity="center_horizontal"
+        android:lines="1"
+        android:padding="3dp"
+        android:textColor="@color/colorGray"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profile"
+        app:layout_constraintVertical_bias="0.134"
+        tools:layout_conversion_absoluteHeight="20dp"
+        tools:layout_conversion_absoluteWidth="150dp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@drawable/buttonbackgroundsky"
+        android:fontFamily="@font/zigle"
+        android:gravity="center"
+        android:text="저장"
+        android:textColor="@color/colorGray"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name"
+        app:layout_constraintVertical_bias="0.276"
+        tools:layout_conversion_absoluteHeight="40dp"
+        tools:layout_conversion_absoluteWidth="60dp" />
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="11dp"
+        android:background="@color/colorWhite"
+        android:fontFamily="@font/zigle"
+        android:foreground="@drawable/ic_camera2"
+        android:gravity="center"
+        android:stateListAnimator="@null"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toEndOf="@+id/iv_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495"
+        tools:layout_conversion_absoluteHeight="40dp"
+        tools:layout_conversion_absoluteWidth="60dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
