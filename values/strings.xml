@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Yaksok</string>
-    <string name="google_map_key">AIzaSyBAquSGHwzCpQ2NOT5-abMTb2Pm0fJglh0</string>
-    <string name="kakao_app_key">205d87abcddf15f9c5f91cda522a21e6</string>
-    <string name="kakao_scheme">kakao205d87abcddf15f9c5f91cda522a21e6</string>
+    <string name="google_map_key">-----------------------------</string>
+    <string name="kakao_app_key">-----------------------------</string>
+    <string name="kakao_scheme">-----------------------------</string>
     <string name="kakaolink_host">kakaolink</string>
 
     <string name="title_activity_maps">Current Place Details</string>
